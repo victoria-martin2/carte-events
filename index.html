@@ -14,9 +14,17 @@
 </head>
 
 <body>
-  <h1>Que faire à <strong>Paris</strong> ?</h1>
-  <div id="mapid"></div>
-
+  <header>
+    <h1>Que faire à <strong>Paris</strong> ?</h1>
+  </header>
+  <content>
+    <div id="mapid"></div>
+  </content>
+  <form onsubmit="onFormSubmit(event)">
+    <input type="text" name="search" id="searchInput">
+    <input type="submit">
+  </form>
+  
 
   <!-- import the webpage's javascript file -->
   <!-- Make sure you put this AFTER Leaflet's CSS -->
